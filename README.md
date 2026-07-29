@@ -2,7 +2,7 @@
 
 > A lightweight computer vision framework built from scratch in Python, combining classical image processing, feature engineering, and machine learning into a modular educational and research-oriented toolkit.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Computer Vision](https://img.shields.io/badge/Domain-Computer%20Vision-orange)
 
@@ -122,29 +122,18 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-> **TODO:** Verify dependency list and Python version.
+> Python 3.12 
 
-# Usage
 
-## Train
+# Train & Evaluate 
 
 ```bash
 python demo.ipynb
 ```
 
-## Evaluate
 
-```bash
-python evaluate.py
-```
 
-## Notebook
-
-```bash
-jupyter notebook
-```
-
-> **TODO:** Update commands to match the repository entry points.
+ 
 
 # MiniCV
 
@@ -192,9 +181,25 @@ Evaluation
 
 > The used dataset is : Intel Image classification dataset
 
-> **TODO:** Add class distribution.
+> The Intel Image Classification dataset contains approximately 25,000 images of size 150x150 pixels, evenly distributed across 6 classes of natural and man-made scenes. 
 
-> **TODO:** Add preprocessing details.
+| Class Label | Category | Description |
+| :--- | :--- | :--- |
+| **0** | **Buildings** | Man-made structures and urban architecture |
+| **1** | **Forest** | Dense tree coverage and woodland areas |
+| **2** | **Glacier** | Ice formations and snowy landscapes |
+| **3** | **Mountain** | Rocky peaks and high-altitude terrain |
+| **4** | **Sea** | Ocean views and large water bodies |
+| **5** | **Street** | Roads, highways, and urban pathways | 
+
+>The dataset is organized into three distinct folders for different stages of the machine learning pipeline:
+
+>Training Set (seg_train): Contains approximately 14,000 images used for model training. 
+>Test Set (seg_test): Contains approximately 3,000 images used for validation and testing. 
+>Prediction Set (seg_pred): Contains approximately 7,000 images (unlabeled) used for final predictions and challenges. 
+>The images are generally evenly distributed across the six categories within the training and test sets, making it a balanced dataset for multi-class classification tasks. The dataset was originally released by Intel for a challenge on Analytics Vidhya and is widely hosted on platforms like Kaggle and Hugging Face. 
+ 
+> Preprocessing : Through the minicv library, having functions for i/o images and image augementation.
 
 # Experiments
 
@@ -221,7 +226,7 @@ Contents include:
 | KNN | 0.43 | 0.33 | 0.45 | 0.42 |
 | CNN | 0.56 | 0.66 | 0.70 | 0.54 |
 
-> **TODO:** Replace placeholders with final experimental results.
+ 
 
 # Roadmap
 
@@ -250,7 +255,8 @@ Contributions are welcome through issues and pull requests.
 
 # License
 
-> **TODO:** Specify project license (MIT, Apache-2.0, etc.).
+© 2026 Suhaila Khaled, Sarah Nizar. All Rights Reserved.
+This project is licensed under the MIT License.
 
 ---
 
