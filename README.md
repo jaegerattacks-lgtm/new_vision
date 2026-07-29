@@ -247,7 +247,7 @@ Contributions are welcome through issues and pull requests.
 ```bibtex
 @misc{newvision2026,
   title={New Vision},
-  author={TODO},
+  authors={Suhaila khaled and Sarah Nizar},
   year={2026},
   url={https://github.com/jaegerattacks-lgtm/new_vision}
 }
